@@ -22,7 +22,7 @@ function highAndLow(numbers) {
       iMin = Math.min(...arrNum).toString()
     }
   }
-  const res = iMax +" "+ iMin ;
+  const res = "'"+iMax +" "+ iMin+"'";
   const ires = res;
   console.log(ires);
   console.log(typeof ires);
