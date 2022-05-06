@@ -13,4 +13,4 @@ function isTriangle(a,b,c)
 }
 
 isTriangle( 1, 3, 5);
-console.log(isTriangle( 1, 0, 5))
+console.log(isTriangle( 1, 0, 5))  

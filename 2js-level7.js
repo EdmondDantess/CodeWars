@@ -27,7 +27,7 @@ function highAndLow(numbers) {
   console.log(ires);
   console.log(typeof ires);
   return ires
-  
+   
  
 }
 

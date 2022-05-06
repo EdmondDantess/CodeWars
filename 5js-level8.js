@@ -14,5 +14,5 @@ a = resMassive.map(element =>
     console.log(a)
     return a
 }
-
+   
 digitize(1325325)

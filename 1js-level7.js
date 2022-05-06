@@ -17,4 +17,4 @@ function getCount(str) {
    
 } return vowelsCount
 }
-getCount('hi my names')
+getCount('hi my names') 
