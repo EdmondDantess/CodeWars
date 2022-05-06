@@ -10,27 +10,26 @@ All numbers are valid Int32, no need to validate them.
 There will always be at least one number in the input string.
 Output string must be two numbers separated by a single space, and highest number is first.  */
 
-function highAndLow(numbers){
-  let  arrNum = numbers.split(' ')
-  let  iMax = 0;
-  let  iMin = 0;
-    for (let el of arrNum) {
-        if (el == Math.max.apply(null, arrNum)) {
-         iMax  = Math.max.apply(null, arrNum)
-        }
-        if (el == Math.min.apply(null, arrNum)) {
-            iMin  = Math.min.apply(null, arrNum)
+function highAndLow(numbers) {
+  let arrNum = numbers.split(' ')
+  let iMax = 0;
+  let iMin = 0;
+  for (let el of arrNum) {
+    if (el == Math.max(...arrNum)) {
+      iMax = Math.max(...arrNum).toString()
     }
+    if (el == Math.min(...arrNum)) {
+      iMin = Math.min(...arrNum).toString()
     }
-    const res = String(iMax) + String(iMin);
-    console.log(res);
-    return res
+  }
+
+  const res = iMax +" "+ iMin ;
+  const ires = res;
+
+  return ires
+  
+  console.log(ires);
+  console.log(typeof ires); 
 }
 
-  highAndLow("5 4 -7 6 2 -8");
-
-
-
-nu = ("3 2 1 3 4");
- jj =  nu.split( );
- console.log(jj)
+highAndLow('5 4 -7 6 2 -8');
