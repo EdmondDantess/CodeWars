@@ -11,7 +11,7 @@ const result = numArray.reverse();
 resMassive = result.toString().split(',')
 a = resMassive.map(element => 
    parseInt(element));
-    console.log(a)
+    console.log(a);
     return a
 }
    
