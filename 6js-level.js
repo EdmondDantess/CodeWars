@@ -31,7 +31,7 @@ function multiply(a,b){
 }
 
 function mod(a,b){
-    return Math.abs(a, b)
+    return a%b
 }
    
 function exponent(a,b){
