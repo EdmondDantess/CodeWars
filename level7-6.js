@@ -10,10 +10,17 @@ function accum(s) {
   let arr = s.split("");
   let i = 1;
   while (i < arr.length) {
+    arr.splice(
+      i,
+      1,
+      "-" + arr[i].toUpperCase() + arr[i].repeat(i).toLowerCase()
+    );
     i++;
   }
-
-  return arr;
+  let firsLetter = arr[0].toUpperCase();
+  arr.shift();
+  arr.unshift(firsLetter);
+  return arr.join("");
 }
 
 console.log(accum("rqasdSADf"));
